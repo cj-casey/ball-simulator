@@ -5,6 +5,14 @@ Allows the user to spawn bouncy balls, and also alter their elastic coefficient 
 create super elastic collisions by raising the coefficent above 1, however this can quickly go out of control. Currently the collisions are not well optimized, 
 and the simulator can reasonably only handle a few dozen balls. 
 
+## using a venv
+- ```bash
+  virtualenv venv
+  source ./venv/bin/activate
+  pip install -r requirements.txt
+  ```
+- After that you're ready - `python main.py`
+
 Plans:
 * Create more newtonian physical elements for more accurate collisions
 * Implement a binary search tree for collisions to reduce lag and improve collisions
